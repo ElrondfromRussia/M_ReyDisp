@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>app_icon.png</file>
+        <file>m_reestr.png</file>
+        <file>add.png</file>
+        <file>exit.png</file>
+        <file>del.png</file>
+        <file>upd.png</file>
+        <file>app_icon.ico</file>
+        <file>disp.png</file>
+        <file>rstr.png</file>
+    </qresource>
+</RCC>
