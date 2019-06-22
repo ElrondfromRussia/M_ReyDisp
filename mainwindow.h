@@ -1,31 +1,11 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QLabel>
-#include <QPixmap>
-#include <QPushButton>
-#include <QBoxLayout>
-#include <QMouseEvent>
-#include <QComboBox>
-#include <QSerialPortInfo>
-#include <QTimer>
-#include <QSystemTrayIcon>
-#include <QMenu>
-#include <QApplication>
-#include <QSettings>
-#include <QDir>
-#include <QDebug>
-#include <QListWidget>
-#include <QFileDialog>
-#include <QMap>
-#include <QException>
-#include <QMessageBox>
-#include <QProcess>
 
-#include <cstddef>
+#include <my_page.h>
+#include <reestr_page.h>
+#include <disp_page.h>
 
-#define GET_ALL "tasklist"
-#define ID_DEL "taskkill  /Pid "
 
 namespace Ui {
 class MainWindow;
@@ -52,14 +32,19 @@ class MainWindow : public QLabel
     QMap<QString, QString> dispsmap;
     int prstate;
 
+    My_Page* m_page;
+    Reestr_Page* r_page;
+    Disp_Page* d_page;
+
 public slots:
     void timerMainShot();
     void iconActivated(QSystemTrayIcon::ActivationReason reason);
-    void delete_el();
-    void add_someth();
-    void fill_list();
     void show_reestr();
     void show_disp();
+
+    void add_item();
+    void delete_item();
+    void fill();
 
 public:
     explicit MainWindow(QWidget *parent = 0);

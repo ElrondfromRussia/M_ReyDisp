@@ -13,9 +13,16 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    my_page.cpp \
+    reestr_page.cpp \
+    disp_page.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    my_page.h \
+    global.h \
+    reestr_page.h \
+    disp_page.h
 
 FORMS    +=
 
