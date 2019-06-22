@@ -1,6 +1,7 @@
 #ifndef GLOBAL
 #define GLOBAL
-
+  
+  
 #include <QLabel>
 #include <QPixmap>
 #include <QPushButton>
@@ -29,6 +30,7 @@
 
 #define GET_ALL "tasklist"
 #define ID_DEL "taskkill  /Pid "
+
 
 
 #endif // GLOBAL
